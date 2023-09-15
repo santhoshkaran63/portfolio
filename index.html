@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Santhosh</span> Karunakaran<br>from Dallas, Texas.</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a Computer Science student at The University of Texas at Dallas, 
+                    deeply passionate about software engineering and programming. My educational 
+                    journey has armed me with a strong foundation in computer science, while my 
+                    proficiency in languages like Python, C++, JavaScript, and Java fuels my love 
+                    for coding. I'm on a constant quest to broaden my knowledge and technical skills, 
+                    with the goal of using my expertise to craft innovative software solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web Application Development (HTML, CSS, JavaScript)</li>
+                        <li><span>Programming</span><br>Python, C++, JavaScript, Java, HTML, CSS, C#, React, SQL, MySQL, <br>PostgreSQL, NodeJS, MongoDB, REST 
+                            APIs, Postman, Linux, UNIX, Mac, Windows</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces (Figma, Canva, Abobe Photoshop)</li>
+                        <li><span>Data Science</span><br>Knowledgeable in SQL, database systems, data visualization, and Python </li>
+                        <li><span>AWS</span><br>Certified AWS Cloud Practitioner / Pursuing AWS Solutions Architect Certification <br>View Certification:</li>
+                        <div class="aws-icons">
+                            <a href="https://www.credly.com/badges/cf698520-70d6-4905-b34e-9e18488ffb22?source=linked_in_profile"><i class="fa-brands fa-aws"></i></i></a>
+                        </div>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+
+                        <li><span>2023</span><br>Data Science Intern at Deloitte (Chicago, IL)</li>
+                        <li><span>2022</span><br>Software Engineering Intern at ObserveID (Remote)</li>
+                        <li><span>2021-2022</span><br>Technical Intern at Fidelity Investments (Westlake, TX)</li>
+                        <li><span>2018-2020</span><br>Sales Representative at Vector Marketing (Lewisville, TX)</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>The University of Texas at Dallas / Bachelors in Computer Science</li>
+                        <li><span>2016-2020</span><br>Flower Mound High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in crafting visually appealing and user-friendly websites. From concept to implementation, I bring your vision to life, ensuring seamless navigation, responsive layouts, and an engaging user experience. Whether it's a personal blog, e-commerce site, or a corporate web presence, I create designs that not only look great but also function flawlessly.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>User interface and user experience design are at the heart of what I do. I focus on creating intuitive interfaces that enhance user satisfaction. With a keen eye for detail and user-centered design principles, I strive to make every interaction with your application or website enjoyable and efficient. From wireframes to prototypes, I ensure a delightful and intuitive user journey.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Crafting captivating and functional mobile applications is my expertise. Whether you're targeting iOS, Android, or cross-platform development, I design apps that stand out in the crowded digital marketplace. My design process combines aesthetics with usability, resulting in apps that not only look stunning but also provide a seamless and engaging experience for your users. Let's turn your app idea into a reality with stunning design.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>RecipeFinder</h3>
+                    <p>Developed a recipe app for college students with limited cooking ingredients.
+                        Used Edamam API to get nutrition facts on recipes and developed in React.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>CrypTrack</h3>
+                    <p>Designed and developed a cryptocurrency price tracker using React Hook and Axios and React API</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> santhosh.karunakaran01@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +1 (940) 595-2404</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/santhosh_karuna"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/santhosh.karan/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/santhoshkaran/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Santhosh-Karunakaran.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Santhosh. Made with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/santhoshkaran/">Santhosh Karunakaran</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPgoNtVg27higR2wwO4sufxHHbDpWZSgD_H_AzivwS4eaBISMHx5TAsM08tq4xMtZqwQ/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
